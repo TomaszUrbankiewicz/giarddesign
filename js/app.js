@@ -1,11 +1,7 @@
 
+import {showingAndHoningSearch, showingMobileMenu} from './header.js';
 
 document.addEventListener("DOMContentLoaded", function (){
-
-    //szukanie/łapanie elementów
-    
-    //funkcje
-
-    //słuchanie events
-
-})
+    showingAndHoningSearch();
+    showingMobileMenu();
+});
