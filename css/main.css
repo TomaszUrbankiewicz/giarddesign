@@ -441,6 +441,7 @@ header {
 }
 .container_nav .search_box {
   position: absolute;
+  z-index: 10;
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
@@ -486,6 +487,7 @@ header {
   border-radius: 0px 0px 12px 12px;
   background-color: rgba(38, 38, 38, 0.275);
   position: absolute;
+  z-index: 10;
   top: 80px;
   left: -80px;
   transform: translateX(-50%);
