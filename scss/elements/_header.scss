@@ -6,6 +6,7 @@ header{
 .container_nav{
     position: relative;
     font-size: 16px;
+    font-family: $font_menu;
     button{
         background-color: $w;
         border: none;
@@ -70,23 +71,26 @@ header{
     width: 160px;
     height: 500px;
     border-radius: 0px 0px 12px 12px;
-    background-color: rgba(38, 38, 38, 0.275);
+    background-color: rgba(38, 38, 38, 0.923);
     position: absolute;
     z-index: 10;
     top: 80px;
     left: -80px;
     transform: translateX(-50%);
     transition: left 0.9s ease;
+    color: $w;
     button{
         position: absolute;
         padding: 10px;
         z-index: 2;
         border: none;
         border-radius: 10px 10px 0px 0px;
-        margin-left: calc(100% + -10px);
-        margin-top: 10px;
+        margin-left: calc(100% + -11px);
+        margin-top: 11px;
         transform: rotate(90deg);
-        background-color: rgba(38, 38, 38, 0.275);
+        background-color: rgba(38, 38, 38, 0.923);
+        color: $w;
+        font-family: $font_menu;
     }
     ul{
         li{

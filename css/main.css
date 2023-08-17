@@ -2,6 +2,7 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Montserrat:ital,wght@0,300;0,400;1,600&display=swap");
 html,
 body,
 div,
@@ -431,6 +432,7 @@ header {
 .container_nav {
   position: relative;
   font-size: 16px;
+  font-family: "Inter", sans-serif;
 }
 .container_nav button {
   background-color: #FFFFFF;
@@ -485,13 +487,14 @@ header {
   width: 160px;
   height: 500px;
   border-radius: 0px 0px 12px 12px;
-  background-color: rgba(38, 38, 38, 0.275);
+  background-color: rgba(38, 38, 38, 0.923);
   position: absolute;
   z-index: 10;
   top: 80px;
   left: -80px;
   transform: translateX(-50%);
   transition: left 0.9s ease;
+  color: #FFFFFF;
 }
 .container_nav_mobile button {
   position: absolute;
@@ -499,10 +502,12 @@ header {
   z-index: 2;
   border: none;
   border-radius: 10px 10px 0px 0px;
-  margin-left: calc(100% - 10px);
-  margin-top: 10px;
+  margin-left: calc(100% - 11px);
+  margin-top: 11px;
   transform: rotate(90deg);
-  background-color: rgba(38, 38, 38, 0.275);
+  background-color: rgba(38, 38, 38, 0.923);
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
 }
 .container_nav_mobile ul li a {
   padding-left: 10px;
@@ -521,5 +526,149 @@ header {
 
 .container_nav_mobile__expanded {
   left: 75px;
+}
+
+.intro .carousel_content h1 {
+  font-size: 70px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 1400px) {
+  .intro .carousel_content h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1200px) {
+  .intro .carousel_content h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .intro .carousel_content h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .intro .carousel_content h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .intro .carousel_content h1 {
+    font-size: 20px;
+  }
+}
+.intro .carousel_content .container_span {
+  width: 440px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+@media (max-width: 992px) {
+  .intro .carousel_content .container_span {
+    font-size: 14px;
+    width: 325px;
+  }
+}
+@media (max-width: 400px) {
+  .intro .carousel_content .container_span {
+    font-size: 12px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .intro .carousel_content .container_span {
+    z-index: 5;
+  }
+}
+.intro .carousel_content button {
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+  background-color: #1B5B31;
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.intro .carousel_content button:focus {
+  background-color: #1B5B31;
+  color: #FFFFFF;
+}
+@media (max-width: 400px) {
+  .intro .carousel_content button img {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .intro .carousel_content button {
+    padding: 10px 15px 10px 15px;
+  }
+}
+@media (max-width: 992px) {
+  .intro .carousel_content button {
+    padding: 10px 15px 10px 15px;
+    font-size: 11px;
+  }
+}
+.intro .carousel_content .btn-outline {
+  background-color: #DCC1AB;
+  color: #1B5B31;
+  border: solid 2px;
+}
+.intro .carousel_content .btn-outline:focus {
+  background-color: #DCC1AB;
+  color: #1B5B31;
+}
+.intro .carousel-control {
+  top: auto;
+  background-color: #FFFFFF;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  opacity: 1;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .intro .carousel-control {
+    width: 40px;
+    height: 40px;
+  }
+}
+.intro .carousel-control-prev {
+  left: auto;
+  right: 80px;
+}
+@media (max-width: 768px) {
+  .intro .carousel-control-prev {
+    right: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .intro .carousel_content {
+    z-index: 5;
+    padding: 20px;
+    background-color: #DCC1AB;
+  }
+}
+.intro .box_right {
+  background-image: url("../../assets/Photo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro .box {
+  height: 737px;
+}
+@media (max-width: 992px) {
+  .intro .box {
+    height: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .intro .box {
+    height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .intro .box {
+    height: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
