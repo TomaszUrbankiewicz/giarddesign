@@ -1,0 +1,166 @@
+.offer{
+    display: inline-block;
+    background-color: $color-background_light;
+    height: 939px;
+    width: 100%;
+    font-family:$font_menu ;
+    .offer_box_text{
+        padding: 120px 0px 20px 100px;
+        span{
+            color: $color-green;
+            font-size: 12px;
+        }
+        h1{
+            font-size: 48px;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .offer_box_carts{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-top: 150px;
+        .card{
+            width: 378px;
+            height: 370px;
+            background-color: $w;
+            border: none;
+            border-radius: 10px;
+            padding-left: 35px;
+            padding-right: 35px;
+            transform-style: preserve-3d;
+            .card-item{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                h1{
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 14px;
+                }
+                .link-container{
+                    display: inline-block;
+                    position: relative;
+                    text-decoration: none;
+                    color:$color-green;
+                    img {
+                        vertical-align: middle;
+                        margin-left: 0;
+                        opacity: 1;
+                        transition: margin-left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+                    }
+                    .link-bar {
+                        position: absolute;
+                        bottom: -10;
+                        left: 0;
+                        width: 170px;
+                        height: 2px;
+                        background-color: $color-green;
+                        transform-origin: left;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 992px) {
+    .offer{
+        height: 100%;
+        padding: 20px;
+        .offer_box_text{
+            padding: 100px 0px 0px 0px;
+            h1{
+                font-size: 42px;
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .offer_box_carts{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-top: 50px;
+            padding: 10px 0px 0px 0px;
+            .card{
+                .card-item{
+                    h1{
+                        font-size: 42px;
+                        margin-top: 20px;
+                        margin-bottom: 40px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media(max-width: 768px) {
+    .offer{
+    
+        .offer_box_text{
+            padding: 50px 0px 0px 0px;
+            h1{
+                font-size: 32px;
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+            p{
+                font-size: 10px;
+            }
+            span{
+                color: $color-green;
+                font-size: 9px;
+            }
+        }
+    }
+
+}
+@media(max-width: 576px) {
+    .offer{
+    
+        .offer_box_carts{
+            .card{
+                width: 80%;
+                padding-left: 5px;
+                padding-right: 5px;
+                .card-item{
+                    h1{
+                        font-size: 22px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                    .link-container{
+                        font-size: 12px;
+                        .link-bar {
+                            width: 130px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media(max-width: 400px) {
+    .card {
+        width: 100%;
+    }
+    
+}
