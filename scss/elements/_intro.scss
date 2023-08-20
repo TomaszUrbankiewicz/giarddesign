@@ -6,16 +6,17 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .box_right_about{
+    .box_right_about_company{
         background-image: url("../../assets/Photo2.png");
+        background-size: 100% 100%;
     }
-    .box_left_about{
+    .box_left_about_company{
         margin-left: 55%;
     }
     .box{
         height: 737px;
-
         .carousel_content{
+            
             h1{
                 font-size: 70px;
                 font-weight: 600;
@@ -47,7 +48,7 @@
                     color: $color-green;
                 }
             }
-            .about{
+            .about_company{
                 background-color: $color-green;
                 color: $w;
                 &:focus{
@@ -145,6 +146,13 @@
                     z-index: 5;
                 }
             }
+            .carousel_content_about_company{
+                background-color:$color-green;
+            }
+            
+        }
+        .box_left_about_company{
+            margin-left: 0%;
         }
         .carousel-control{
             width: 40px;
@@ -155,9 +163,17 @@
         }
         
     }
+    .about_company{
+        .carousel_content{
+            background-color: $color-green;
+        }
+    }
 }
 @media(max-width: 576px) {
     .intro{
+        .box_right_about_company{
+            background-size: 100% 100%;
+        }
         .box{
             height: 300px;
             .carousel_content{

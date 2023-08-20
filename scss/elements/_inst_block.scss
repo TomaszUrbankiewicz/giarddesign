@@ -1,0 +1,63 @@
+.inst_block{
+    .inst_block_container{
+        .box{
+            height: 358px;
+            background-color: $color-green;
+            font-family: $font_menu;
+            color: $w;
+        }
+        .box_left{
+            font-size:40px;
+            .box_left_text{
+                max-width: 610px;
+            }
+            span{
+                font-family: $font_text;
+                font-weight: 600;
+            }
+        }
+        .box_right {
+            button{
+                border: none;
+                border-radius: 20px;
+                padding: 5px 10px;
+                margin-top: 5px;
+                color: $color-green;
+            }
+        }
+    }
+}
+@media(max-width: 992px) {
+    .inst_block{
+        .inst_block_container{
+            .box_left{
+                font-size:30px;
+            }
+        }
+    }
+}
+@media(max-width: 768px) {
+    .inst_block{
+        .inst_block_container{
+            .box{
+                height: 130px;
+            }
+            .box_right {
+                button{
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 576px) {
+    .inst_block{
+        .inst_block_container{
+            .box_right {
+                button{
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

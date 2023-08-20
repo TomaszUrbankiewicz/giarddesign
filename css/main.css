@@ -533,10 +533,11 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.intro .box_right_about {
+.intro .box_right_about_company {
   background-image: url("../../assets/Photo2.png");
+  background-size: 100% 100%;
 }
-.intro .box_left_about {
+.intro .box_left_about_company {
   margin-left: 55%;
 }
 .intro .box {
@@ -573,11 +574,11 @@ header {
   background-color: #DCC1AB;
   color: #1B5B31;
 }
-.intro .box .carousel_content .about {
+.intro .box .carousel_content .about_company {
   background-color: #1B5B31;
   color: #FFFFFF;
 }
-.intro .box .carousel_content .about:focus {
+.intro .box .carousel_content .about_company:focus {
   background-color: #1B5B31;
   color: #FFFFFF;
 }
@@ -650,6 +651,12 @@ header {
   .intro .box .carousel_content .container_span {
     z-index: 5;
   }
+  .intro .box .carousel_content_about_company {
+    background-color: #1B5B31;
+  }
+  .intro .box_left_about_company {
+    margin-left: 0%;
+  }
   .intro .carousel-control {
     width: 40px;
     height: 40px;
@@ -657,8 +664,14 @@ header {
   .intro .carousel-control-prev {
     right: 40px;
   }
+  .about_company .carousel_content {
+    background-color: #1B5B31;
+  }
 }
 @media (max-width: 576px) {
+  .intro .box_right_about_company {
+    background-size: 100% 100%;
+  }
   .intro .box {
     height: 300px;
   }
@@ -818,6 +831,48 @@ header {
 @media (max-width: 400px) {
   .card {
     width: 100%;
+  }
+}
+.inst_block .inst_block_container .box {
+  height: 358px;
+  background-color: #1B5B31;
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+}
+.inst_block .inst_block_container .box_left {
+  font-size: 40px;
+}
+.inst_block .inst_block_container .box_left .box_left_text {
+  max-width: 610px;
+}
+.inst_block .inst_block_container .box_left span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.inst_block .inst_block_container .box_right button {
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  color: #1B5B31;
+}
+
+@media (max-width: 992px) {
+  .inst_block .inst_block_container .box_left {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .inst_block .inst_block_container .box {
+    height: 130px;
+  }
+  .inst_block .inst_block_container .box_right button {
+    margin-top: -5px;
+  }
+}
+@media (max-width: 576px) {
+  .inst_block .inst_block_container .box_right button {
+    margin-top: 5px;
   }
 }
 /*# sourceMappingURL=main.css.map */
