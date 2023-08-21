@@ -1,0 +1,59 @@
+.footer_container{
+    background-color: $b;
+    padding-top: 3px;
+    display: block;
+    img{
+        display: block;
+    }
+}
+hr{
+    color: $w;
+}
+
+.footer{
+    .footer_container{
+        .box{
+            background-color: $color-green;
+            font-family: $font_menu;
+            color: $w;
+            p, a{
+                font-size:16px;
+                text-decoration: none;
+                color: $w;
+            }
+        }
+        .box_left{
+            font-size:40px;
+            .box_left_text{
+                max-width: 610px;
+                
+            }
+        }
+        .box_right {
+            button{
+                border: none;
+                border-radius: 20px;
+                padding: 5px 10px;
+                margin-left: 10px;
+                color: $color-green;
+            }
+        }
+        .box_footer{
+            background-color: $b;
+        }
+    }
+}
+@media(max-width: 400px) {
+    .footer{
+        .footer_container{
+            .box{
+                p, a{
+                    font-size:12px;
+                    text-decoration: none;
+                    color: $w;
+                }
+            }
+        }
+    }
+    
+}
