@@ -1,4 +1,4 @@
 Przed rozpoczęciem w kosoli należy wpisać "npm install".<br>
 Następnie "npm start".<br>
 Stronę otwieramy w localhost:3000<br>
-Projektt rekrutacyjny
+Projekt rekrutacyjny
