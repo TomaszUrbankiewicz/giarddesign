@@ -36,12 +36,14 @@ export function gallery() {
     });
 
     const expandButton = document.getElementById("expandButton");
-    const expandedGallery = document.querySelector(".expanded-gallery");
-    const afterElement = document.querySelector(".gallery_::after");
+    const expandedGallery = document.querySelector(".gallery");
+    const afterElement = document.querySelector("#gallerySection");
     
     expandButton.addEventListener("click", () => {
       expandedGallery.classList.add("show"); // Dodaj klasę "show" dla animacji i wydłużenia
+      afterElement.classList.remove("gallery_shadow")
+      expandedGallery.classList.remove("gallery_hidden")
       expandButton.style.display = "none";
-      afterElement.style.opacity = "0"; // Zmniejsz przezroczystość efektu ::after
+
     });
 }
