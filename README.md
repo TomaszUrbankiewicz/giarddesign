@@ -16,5 +16,4 @@ Stronę otwieramy w localhost:3000
 # Użycie
 Projekt stworzony w ramach rozszerzenia portfolio.<br><br><br><br>
 
-
-Wygląd strony oparty na projekcie firmy adRespect <a href="https://adrespect.pl/">-></a>
+Wygląd strony oparty na projekcie firmy adRespect <a href="https://adrespect.pl/">📌</a>
